@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <li class="wrap">
+        <div class="intro">
+            <h1>Javascript制作集</h1>
+        </div>
+        <section class="js_cont">
+        <ul class="js_list">
+            <li>
+                <h2>スライドショー：沖縄の風景</h2>
+                <div id="slide_html">
+                    <img src="img/oki_img01.jpg" alt="slide01">
+                    <img src="img/oki_img02.jpg" alt="slide02">
+                    <img src="img/oki_img03.jpg" alt="slide03">
+                </div>
+            </li>
+            <li>
+                <h2>クラス付与：沖縄って手ごろに行けるんです</h2>
+                <div class="intro-contents">
+                    <div class="intro-text">
+                        <h2><span>LCCを使えば航空券は年間を通して</span><span>羽田、成田から往復１万５千円～３万円</span></h2>
+                        <p><span>連休に行きたい場合は半年前に予約すると、往復３万円以内で取れます。</span></p>
+                        <p><span>連休を外して３ヶ月前に予約すると、往復１万５千円で取れます。</span></p>
+                    </div>
+                    <img class="intro-img" src="img/oki_img04.jpg">
+                </div>
+                <div class="intro-contents">
+                    <img class="intro-img intro-img--02" src="img/oki_img05.jpg">
+                    <div class="intro-text intro-text--02">
+                        <h2><span>ホテルはMr.Kinjoがおすすめ</span><span>1LDKをホテルにしたようなお部屋</span></h2>
+                        <p><span>3000円～9000円で泊まることができます。</span></p>
+                        <p><span>那覇市内に何店舗かある有名なホテルです。</span></p>
+                    </div>
+                </div>
+                <div class="intro-contents intro-contents--img">
+                    <div class="intro-text intro-text--03">
+                        <h2><span>沖縄といえば海！</span><span>離島でお魚と戯れることができます</span></h2>
+                        <p><span>離島に行くのってすごいお金かかりそうなイメージがすると思う方も多いと思います。</span></p>
+                        <p><span>那覇市のフェリー乗り場「とまりん」から往復で4,090円でいけちゃいます！</span></p>
+                    </div>
+                    <div class="intro-img intro-img--03">
+                        <img src="img/oki_img06.jpg">
+                        <img src="img/oki_img07.jpg">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h2>ホバーエフェクト：おすすめの３泊コース</h2>
+                <div id="map_action">
+                    <div class="map_area">
+                        <a><img src="img/map.png"></a>
+                        <a class="modalBtn"><img src="img/day1.png"></a>
+                        <div class="simpleModal modal">
+                            <div class="modal-content">
+                                <span class="closebtn">&times;</span>
+                                <div class="modal_detail">
+                                    <img src="img/md_churaumi.jpg">
+                                    <p>美ら海水族館は那覇市内から車、バスで約2時間！<br>本島では見られない海洋生物に出会えます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="modalBtn"><img src="img/day1.png"></a>
+                        <div class="simpleModal modal">
+                            <div class="modal-content">
+                                <span class="closebtn">&times;</span>
+                                <div class="modal_detail">
+                                    <img src="img/md_gorilachop.jpg">
+                                    <p>リアル美ら海水族館を楽しむなら「ゴリラチョップ」！<br>ビーチからエントリーできるので、小さなお子様と一緒に間近で魚と触れ合うことができます。魚の魚群なんかもいます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="modalBtn"><img src="img/day1.png"></a>
+                        <div class="simpleModal modal">
+                            <div class="modal-content">
+                                <span class="closebtn">&times;</span>
+                                <div class="modal_detail">
+                                    <img src="img/md_american.jpg">
+                                    <p>アメリカンビレッジで本島では味わえないきれいな夕日とアメリカンな食事を堪能できます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="modalBtn"><img src="img/day2.png"></a>
+                        <div class="simpleModal modal">
+                            <div class="modal-content">
+                                <span class="closebtn">&times;</span>
+                                <div class="modal_detail">
+                                    <img src="img/md_tomarin.jpg">
+                                    <p>民間フェリー乗り場です。ここから様々な沖縄の離島に行けます。日帰りで非現実的な世界を堪能できます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="modalBtn"><img src="img/day2.png"></a>
+                        <div class="simpleModal modal">
+                            <div class="modal-content">
+                                <span class="closebtn">&times;</span>
+                                <div class="modal_detail">
+                                    <img src="img/md_tomarin.jpg">
+                                    <p>民間フェリー乗り場です。ここから様々な沖縄の離島に行けます。日帰りで非現実的な世界を堪能できます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="modalBtn"><img src="img/day3.png"></a>
+                        <div class="simpleModal modal">
+                            <div class="modal-content">
+                                <span class="closebtn">&times;</span>
+                                <div class="modal_detail">
+                                    <img src="img/md_churaumi.jpg">
+                                    <p>美ら海水族館は那覇市内から車、バスで約2時間！<br>本島では見られない海洋生物に出会えます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="modalBtn"><img src="img/day3.png"></a>
+                        <div class="simpleModal modal">
+                            <div class="modal-content">
+                                <span class="closebtn">&times;</span>
+                                <div class="modal_detail">
+                                    <img src="img/md_churaumi.jpg">
+                                    <p>美ら海水族館は那覇市内から車、バスで約2時間！<br>本島では見られない海洋生物に出会えます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="modalBtn"><img src="img/other.png"></a>
+                        <div class="simpleModal modal">
+                            <div class="modal-content">
+                                <span class="closebtn">&times;</span>
+                                <div class="modal_detail">
+                                    <img src="img/md_churaumi.jpg">
+                                    <p>美ら海水族館は那覇市内から車、バスで約2時間！<br>本島では見られない海洋生物に出会えます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="modalBtn"><img src="img/other.png"></a>
+                        <div class="simpleModal modal">
+                            <div class="modal-content">
+                                <span class="closebtn">&times;</span>
+                                <div class="modal_detail">
+                                    <img src="img/md_churaumi.jpg">
+                                    <p>美ら海水族館は那覇市内から車、バスで約2時間！<br>本島では見られない海洋生物に出会えます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="modalBtn"><img src="img/other.png"></a>
+                        <div class="simpleModal modal">
+                            <div class="modal-content">
+                                <span class="closebtn">&times;</span>
+                                <div class="modal_detail">
+                                    <img src="img/md_churaumi.jpg">
+                                    <p>美ら海水族館は那覇市内から車、バスで約2時間！<br>本島では見られない海洋生物に出会えます。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="tour_icon">
+                        <li>
+                            <img src="img/day1.png">
+                            <p>1日目のスポット</p>
+                        </li>
+                        <li>
+                            <img src="img/day2.png">
+                            <p>2日目のスポット</p>
+                        </li>
+                        <li>
+                            <img src="img/day3.png">
+                            <p>3日目のスポット</p>
+                         </li>
+                         <li>
+                            <img src="img/other.png">
+                            <p>空港、ホテル、レンタカー</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+      </section>
+    </div>
+    <div class="test"></div>
+
+    <a class="modalBtn"><img src="img/day1.png"></a>
+    <div class="simpleModal modal">
+        <div class="modal-content">
+            <span class="closebtn">&times;</span>
+            <div class="modal_detail">
+                <img src="img/md_churaumi.jpg">
+                <p>美ら海水族館は那覇市内から車、バスで約2時間！<br>本島では見られない海洋生物に出会えます。</p>
+            </div>
+        </div>
+    </div>
+    <!--モーダルウィンドウのjs-->
+    <script>
+        var modalActive = document.querySelectorAll('.modalBtn');
+        var modalBase = document.querySelector('.modal');
+        var modalDetail = document.querySelector('.modal-content');
+        var closeBtn = document.querySelector('.closebtn');
+        var modalNum = document.querySelector('.simpleModal');
+        function openModal (){
+            modalNum.style.display = 'block';
+            modalBase.style.display = 'block';
+            modalDetail.style.display = 'block';
+        }
+        function closeModal (){
+            modalBase.style.display = 'none';
+            modalDetail.style.display = 'none';
+        }
+        for(i=0; i < modalActive.length; i++){
+            modalActive[i].addEventListener('click',openModal);
+        }
+        closeBtn.addEventListener('click',closeModal);
+        modalBase.addEventListener('click',closeModal);
+        console.log(modalNum);
+    </script>
+    <!-- スライドのjs -->
+    <script>
+            var current = 0;
+            slides = document.getElementById("slide_html");
+            slides = slides.children;
+            setInterval(
+                function() {
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.opacity = 0;
+                }
+                current = (current != slides.length - 1) ? current + 1 : 0;
+                slides[current].style.opacity = 1;
+                }, 4000
+            );
+    </script>
+    <!-- スライドのjs -->
+    <!-- クラス付与するjs -->
+    <script>
+            function scrollAppear(){
+            var introImg = document.querySelector(".intro-img");
+            var introText = document.querySelector(".intro-text");
+            var introImg02 = document.querySelector(".intro-img--02");
+            var introText02 = document.querySelector(".intro-text--02");
+            var introImg03 = document.querySelector(".intro-img--03");
+            var introText03 = document.querySelector(".intro-text--03");
+            var introPositionImg = introImg.getBoundingClientRect().top;
+            var introPositionText = introText.getBoundingClientRect().top;
+            var introPositionImg02 = introImg02.getBoundingClientRect().top;
+            var introPositionText02 = introText02.getBoundingClientRect().top;
+            var introPositionImg03 = introImg03.getBoundingClientRect().top;
+            var introPositionText03 = introText03.getBoundingClientRect().top;
+            var screenPosition_01 = window.innerHeight;
+            var screenPosition_02 = window.innerHeight;
+
+            if(introPositionImg < screenPosition_01){
+                introImg.classList.add("intro-appear01");
+            }
+            if(introPositionText < screenPosition_02){
+                introText.classList.add("intro-appear02");
+            }
+            if(introPositionImg02 < screenPosition_01){
+                introImg02.classList.add("intro-appear01");
+            }
+            if(introPositionText02 < screenPosition_02){
+                introText02.classList.add("intro-appear02");
+            }
+            if(introPositionImg03 < screenPosition_01){
+                introImg03.classList.add("intro-appear01");
+            }
+            if(introPositionText03 < screenPosition_02){
+                introText03.classList.add("intro-appear02");
+            }
+        }
+        window.addEventListener("scroll",scrollAppear);
+    </script>
+    <!-- クラス付与するjs -->
+    <a href="#top" class="totop arrow" onclick="scrollToTop();return false"></a>
+    <!-- スクロールTotop -->
+    <script>
+            function scrollToTop() {
+                var position = document.body.scrollTop || document.documentElement.scrollTop;
+                if (position) {
+                    window.scrollBy(0, -Math.max(1, Math.floor(position / 5)));
+                    scrollAnimation = setTimeout("scrollToTop()", 20);
+                } else clearTimeout(scrollAnimation);
+            }
+        </script>
+    <!-- スクロールTotop -->
+</body>
+</html>

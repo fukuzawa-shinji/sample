@@ -1,0 +1,518 @@
+@charset "UTF-8";
+h1, h2, h3, h4 {
+  font-family: "ryo-text-plusn","游明朝","Yu Mincho","游明朝体","YuMincho","ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","HiraMinProN-W3","HGS明朝E","ＭＳ Ｐ明朝","MS PMincho",serif;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro > h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  border-bottom: solid 2px #333;
+  padding: 30px 0;
+}
+
+.js_list > li {
+  margin-bottom: 100px;
+}
+
+.js_list > li > h2 {
+  text-align: center;
+  font-size: 30px;
+  border-left: solid 1px #d6d6d6;
+  border-right: solid 1px #d6d6d6;
+  color: #333;
+  padding: 20px;
+  margin: 90px auto 40px;
+  width: 40%;
+}
+
+.intro-contents {
+  display: flex;
+  margin: 0 auto 100px;
+}
+
+.intro-contents--img {
+  margin-bottom: 24%;
+}
+
+.intro-contents .intro-img {
+  transform: scale(1.2);
+  width: 48%;
+  opacity: 0;
+  margin-right: 5%;
+}
+
+.intro-contents .intro-img--02 {
+  width: 44%;
+  margin-left: 12%;
+  margin-right: 0;
+}
+
+.intro-contents .intro-img--03 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.intro-contents .intro-img--03 > img:nth-of-type(1) {
+  position: absolute;
+  width: 52%;
+  top: -36px;
+  z-index: 3;
+  left: -18%;
+}
+
+.intro-contents .intro-img--03 > img:nth-of-type(2) {
+  position: absolute;
+  width: 80%;
+  top: 42%;
+  left: 15%;
+}
+
+.intro-contents .intro-text {
+  position: relative;
+  top: 100px;
+  left: 15%;
+  z-index: 2;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.intro-contents .intro-text > h2 {
+  line-height: 1.4;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.intro-contents .intro-text > h2 > span {
+  color: #666;
+  font-size: 24px;
+  background: #fff;
+  padding: 5px;
+}
+
+.intro-contents .intro-text > h2 > span:first-child {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.intro-contents .intro-text > p {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.intro-contents .intro-text > p:last-child {
+  margin-bottom: 0;
+}
+
+.intro-contents .intro-text > p > span {
+  line-height: 1.6;
+  padding: 5px;
+  background: #fff;
+}
+
+.intro-contents .intro-text > p > span:first-child {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.intro-contents .intro-text--02 {
+  left: inherit;
+  right: 4%;
+}
+
+.intro-contents .intro-text--03 > h2 > span:first-child {
+  width: 200px;
+}
+
+.intro-contents .intro-appear01 {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 1.5s;
+}
+
+.intro-contents .intro-appear02 {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 1.5s;
+}
+
+#map_action {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#map_action .map_area {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+#map_action .map_area > a {
+  cursor: pointer;
+}
+
+#map_action .map_area > a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 5px;
+  bottom: -3px;
+  width: 20px;
+  height: 10px;
+  border: solid thin #87d0d6;
+  border-radius: 50%;
+  animation: wave 2s ease 0s infinite;
+}
+
+@keyframes wave {
+  from {
+    transform: scale(1, 1);
+    box-shadow: 0 0 100px inset #87d0d6;
+  }
+  to {
+    transform: scale(2, 2);
+    opacity: 0;
+  }
+}
+
+#map_action .map_area > a:hover {
+  background-size: auto;
+  width: 69px;
+  height: 94px;
+}
+
+#map_action .map_area > a:hover:before {
+  left: 24px;
+  bottom: -6px;
+}
+
+#map_action .map_area > a:hover > img {
+  visibility: hidden;
+}
+
+#map_action .map_area > a > img {
+  animation: pointmove 1s ease 0s infinite alternate;
+}
+
+@keyframes pointmove {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#map_action .map_area > a:nth-of-type(1) {
+  cursor: default;
+  pointer-events: none;
+}
+
+#map_action .map_area > a:nth-of-type(1) > img {
+  animation: none;
+}
+
+#map_action .map_area > a:nth-of-type(1):before {
+  content: none;
+}
+
+#map_action .map_area > a:nth-of-type(2) {
+  position: absolute;
+  top: 170px;
+  left: 690px;
+}
+
+#map_action .map_area > a:nth-of-type(2):hover {
+  background: url(../img/churaumi_hover.png) no-repeat;
+  top: 119px;
+  left: 672px;
+}
+
+#map_action .map_area > a:nth-of-type(3) {
+  position: absolute;
+  top: 240px;
+  left: 700px;
+}
+
+#map_action .map_area > a:nth-of-type(3):hover {
+  background: url(../img/gorilachop_hover.png) no-repeat;
+  top: 189px;
+  left: 682px;
+}
+
+#map_action .map_area > a:nth-of-type(4) {
+  position: absolute;
+  top: 580px;
+  left: 570px;
+}
+
+#map_action .map_area > a:nth-of-type(4):hover {
+  background: url(../img/american_hover.png) no-repeat;
+  top: 528px;
+  left: 551px;
+}
+
+#map_action .map_area > a:nth-of-type(5) {
+  position: absolute;
+  bottom: 190px;
+  left: 487px;
+}
+
+#map_action .map_area > a:nth-of-type(5):hover {
+  background: url(../img/tomarin_hover.png) no-repeat;
+  bottom: 194px;
+  left: 468px;
+}
+
+#map_action .map_area > a:nth-of-type(6) {
+  position: absolute;
+  bottom: 180px;
+  left: 116px;
+}
+
+#map_action .map_area > a:nth-of-type(6):hover {
+  background: url(../img/zamami_hover.png) no-repeat;
+  bottom: 183px;
+  left: 98px;
+}
+
+#map_action .map_area > a:nth-of-type(7) {
+  position: absolute;
+  bottom: 190px;
+  left: 550px;
+}
+
+#map_action .map_area > a:nth-of-type(7):hover {
+  background: url(../img/shuri_hover.png) no-repeat;
+  bottom: 191px;
+  left: 531px;
+}
+
+#map_action .map_area > a:nth-of-type(8) {
+  position: absolute;
+  bottom: 50px;
+  left: 530px;
+}
+
+#map_action .map_area > a:nth-of-type(8):hover {
+  background: url(../img/heiwakinenkan_hover.png) no-repeat;
+  bottom: 52px;
+  left: 511px;
+}
+
+#map_action .map_area > a:nth-of-type(9) {
+  position: absolute;
+  bottom: 170px;
+  left: 520px;
+}
+
+#map_action .map_area > a:nth-of-type(9):hover {
+  background: url(../img/mrkinjo_hover.png) no-repeat;
+  bottom: 177px;
+  left: 502px;
+}
+
+#map_action .map_area > a:nth-of-type(10) {
+  position: absolute;
+  bottom: 150px;
+  left: 460px;
+}
+
+#map_action .map_area > a:nth-of-type(10):hover {
+  background: url(../img/airport_hover.png) no-repeat;
+  bottom: 152px;
+  left: 442px;
+}
+
+#map_action .map_area > a:nth-of-type(11) {
+  position: absolute;
+  bottom: 90px;
+  left: 480px;
+}
+
+#map_action .map_area > a:nth-of-type(11):hover {
+  background: url(../img/skyrental_hover.png) no-repeat;
+  bottom: 90px;
+  left: 462px;
+}
+
+#map_action .map_area .modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#map_action .map_area .modal-content {
+  position: relative;
+  top: 0;
+  right: 0;
+  border-radius: 6px;
+  background-color: #f4f4f4;
+  margin: 6% auto;
+  width: 50%;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0px 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation: modalopen 1s;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#map_action .map_area .closebtn {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  right: 10px;
+  color: #fff;
+  font-size: 60px;
+}
+
+#map_action .map_area .closeBtn:hover, #map_action .map_area .closeBtn:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#map_action .map_area .modal_detail > img {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+#map_action .map_area .modal_detail > p {
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#map_action > img {
+  width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+
+#map_action .tour_icon {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+}
+
+#map_action .tour_icon > li {
+  align-items: center;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#map_action .tour_icon > li > img {
+  width: 32px;
+}
+
+#map_action .tour_icon > li > p {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+/* autoslideのcss */
+#slide_html {
+  width: 100%;
+  max-width: 1980px;
+  margin: 0 auto;
+  position: relative;
+  background: white;
+}
+
+#slide_html::before {
+  content: "";
+  padding-top: 25%;
+  display: inline-block;
+}
+
+#slide_html > img {
+  width: 100%;
+  position: absolute;
+  transition: opacity .5s ease-in;
+}
+
+#slide_html > img + img {
+  opacity: 0;
+}
+
+.red {
+  color: red;
+}
+
+.totop {
+  display: flex;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #666;
+  background: green;
+  text-decoration: none;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  color: #fff;
+  text-decoration: none;
+  background-color: green;
+}
+
+.arrow::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-top: solid 2px;
+  border-right: solid 2px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.material-icons {
+  display: flex;
+}
+
+#btnScrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e62739;
+  box-shadow: 0 0 10px black;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
